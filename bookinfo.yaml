@@ -72,7 +72,7 @@ spec:
       serviceAccountName: bookinfo-details
       containers:
       - name: details
-        image: docker.io/ei2000/bookinfo-productpage-v1:1.20.3
+        image: docker.io/ei2000/bookinfo-details-v1:1.20.3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080

@@ -70,9 +70,11 @@ spec:
         version: v1
     spec:
       serviceAccountName: bookinfo-details
+      imagePullSecrets:
+      - name: my-secret
       containers:
       - name: details
-        image: docker.io/ei2000/bookinfo-details-v1:1.20.3
+        image: 820242905231.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/bookinfo-details-v1:1.20.3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -121,9 +123,11 @@ spec:
         version: v1
     spec:
       serviceAccountName: bookinfo-ratings
+      imagePullSecrets:
+      - name: my-secret
       containers:
       - name: ratings
-        image: docker.io/ei2000/bookinfo-ratings-v1:1.20.3
+        image: 820242905231.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/bookinfo-ratings-v1:1.20.3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080
@@ -172,9 +176,11 @@ spec:
         version: v1
     spec:
       serviceAccountName: bookinfo-reviews
+      imagePullSecrets:
+      - name: my-secret
       containers:
       - name: reviews
-        image: docker.io/ei2000/bookinfo-reviews-v1:1.20.3
+        image: 820242905231.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/bookinfo-reviews-v1:1.20.3
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -212,9 +218,11 @@ spec:
         version: v2
     spec:
       serviceAccountName: bookinfo-reviews
+      imagePullSecrets:
+      - name: my-secret
       containers:
       - name: reviews
-        image: docker.io/ei2000/bookinfo-reviews-v2:1.20.3
+        image: 820242905231.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/bookinfo-reviews-v2:1.20.3
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -252,9 +260,11 @@ spec:
         version: v3
     spec:
       serviceAccountName: bookinfo-reviews
+      imagePullSecrets:
+      - name: my-secret
       containers:
       - name: reviews
-        image: docker.io/ei2000/bookinfo-reviews-v3:1.20.3
+        image: 820242905231.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/bookinfo-reviews-v3:1.20.3
         imagePullPolicy: IfNotPresent
         env:
         - name: LOG_DIR
@@ -320,9 +330,11 @@ spec:
         version: v1
     spec:
       serviceAccountName: bookinfo-productpage
+      imagePullSecrets:
+      - name: my-secret
       containers:
       - name: productpage
-        image: docker.io/ei2000/bookinfo-productpage-v1:1.20.3
+        image: 820242905231.dkr.ecr.ap-southeast-1.amazonaws.com/bookinfo/bookinfo-productpage-v1:1.20.3
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 9080

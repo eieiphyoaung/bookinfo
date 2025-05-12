@@ -1,3 +1,12 @@
-# bookinfo
+# bookinfo application
 
-I replaced istio images with own docker images.
+I released bookinfo application with 3 versions.
+
+Version1
+- With own docker images
+
+Version2
+- With ECR images
+
+Version3
+- With jfrog images
